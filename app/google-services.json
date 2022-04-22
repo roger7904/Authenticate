@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "458536815117",
+    "project_id": "authenticate-40247",
+    "storage_bucket": "authenticate-40247.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458536815117:android:da5ec03613bb9649d06344",
+        "android_client_info": {
+          "package_name": "com.roger.authenticate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "458536815117-tev05lhqpgqs5gk1tljhtbapm3ka5tjm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.roger.authenticate",
+            "certificate_hash": "572497432a6902632f21ed9ac5a4713473ac66cb"
+          }
+        },
+        {
+          "client_id": "458536815117-6mo0t3mm63nldsrmsd87d7928ine5fhh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfjmAMcFzTOPCFWonP5S1obeKbRX5xBKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "458536815117-6mo0t3mm63nldsrmsd87d7928ine5fhh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
