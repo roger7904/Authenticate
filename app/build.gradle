@@ -16,8 +16,16 @@ android {
     }
 
     buildTypes {
-        release {
+        debug {
+            debuggable true
             minifyEnabled false
+            buildConfigField("String", "GOOGLE_SERVER_CLIENT_ID", '"458536815117-6mo0t3mm63nldsrmsd87d7928ine5fhh.apps.googleusercontent.com"')
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            debuggable false
+            minifyEnabled true
+            buildConfigField("String", "GOOGLE_SERVER_CLIENT_ID", '"458536815117-6mo0t3mm63nldsrmsd87d7928ine5fhh.apps.googleusercontent.com"')
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -27,6 +35,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
@@ -49,4 +60,8 @@ dependencies {
 
     // Also declare the dependency for the Google Play services library and specify its version
     implementation 'com.google.android.gms:play-services-auth:20.1.0'
+
+    // Glide
+    implementation 'com.github.bumptech.glide:glide:4.13.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
 }
