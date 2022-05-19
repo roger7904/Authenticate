@@ -24,17 +24,20 @@ android {
     buildTypes {
 
         def GOOGLE_SERVER_CLIENT_ID = properties.getProperty('GOOGLE_SERVER_CLIENT_ID')
+        def facebook_app_id = properties.getProperty('facebook_app_id')
 
         debug {
             debuggable true
             minifyEnabled false
             buildConfigField("String", "GOOGLE_SERVER_CLIENT_ID", GOOGLE_SERVER_CLIENT_ID)
+            resValue("string", "facebook_app_id", facebook_app_id)
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         release {
             debuggable false
             minifyEnabled true
             buildConfigField("String", "GOOGLE_SERVER_CLIENT_ID", GOOGLE_SERVER_CLIENT_ID)
+            resValue("string", "facebook_app_id", facebook_app_id)
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
